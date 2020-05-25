@@ -7,7 +7,7 @@ import pandas as pd
 import keras
 import os
 
-dataset=pd.read_csv("dl_models/train.csv")
+dataset=pd.read_csv("root/deeplearning/train.csv")
 dataset.head(10)
 
 #To use data from the DataFrame for DL models, we convert the data into numpy arrays
