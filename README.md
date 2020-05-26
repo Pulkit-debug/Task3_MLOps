@@ -9,3 +9,4 @@
 ____________________________
 
 To know more about the project, please visit my Medium article : https://medium.com/@akshayavb99/integrating-ml-dl-with-devops-258dde42e220
+Please feel free to review and suggest better measures to do the same task!
