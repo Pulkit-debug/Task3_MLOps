@@ -44,6 +44,7 @@ accuracy = accuracy[1]*100
 from keras.models import load_model
 layers_unit=8;epochs=50;batch_size=16;check=0
 while accuracy < 94:
+    old_accuracy=accuracy
     choice=random.randint(1,3)
     new_model = load_model('/root/deeplearning/Iter_DL_model.h5')
     new_model.pop()
@@ -74,7 +75,7 @@ while accuracy < 94:
     print(" ")
     print("Accuracy found = "+str(accuracy))
     print(" ")
-    if accuracy < 94 and check<3:
+    if accuracy < 94 and check<3 and old_accuracy<accuracy:
         print("More modifications")
         print(" ")
         print(" ")
@@ -83,6 +84,8 @@ while accuracy < 94:
             print("Randomisation stopped")
         elif accuracy > 94:
             print("Required accuracy achieved")
+        elif accuracy<old_accuracy:
+            print("Accuracy is decreasing. Stop training")
             
         file=open("/root/deeplearning/accuracy.txt","w")
         file.write("Accuracy of model is: "+str(accuracy))
