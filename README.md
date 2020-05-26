@@ -3,8 +3,8 @@
 
 
 ## Contents of the Repository:<br>
-### 1. Python (.py) files to train the ML and DL model - train.py and train_ml.py
-### 2. Respective datasets to train the ML and DL models - train.csv and test.csv (For DL model) and titanic_test.csv
+1. Python (.py) files to train the ML and DL model - train.py and train_ml.py
+2. Respective datasets to train the ML and DL models - train.csv and test.csv (For DL model) and titanic_test.csv
 
 ____________________________
 
